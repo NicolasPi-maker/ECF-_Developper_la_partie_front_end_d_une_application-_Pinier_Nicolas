@@ -1,0 +1,113 @@
+/* CSS Header Wrapper START */
+
+.wrapper {
+    background-color: #45555e;
+    color: white;
+    width: auto;
+    height: 50vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* CSS Header Wrapper END */
+
+/* CSS for navbar on mobile START */
+
+.navDots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1em;
+    font-size: 5em;
+    font-weight: bold;
+    margin-right: 0.5em;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+/* CSS for navbar on mobile END */
+
+
+/* CSS for navbar on desktop START */
+
+.navbarNav {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+    height: 100%;
+    margin: 2em;
+    padding: 0px;
+    font-size: 1.5em;
+}
+
+.navbarNav > li {
+    display: inline-block;
+    position: relative;
+    margin-right: 3em;
+}
+
+
+/* CSS for navbar on desktop END */
+
+
+/* CSS header Logo START */
+
+.logo {
+    display: flex;
+    margin: 2em;
+    max-width: 60px;
+    max-height: 60px;
+}
+
+/* CSS header Logo END */
+
+
+/* Media queries set up nav menu START */
+
+@media screen and (max-width: 415px) {
+    .navbarNav {
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        
+    }
+    
+    .navbarNav > li {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        margin: 0.5em 0;
+        
+    }
+}
+
+@media screen and (min-width: 415px) {
+    .navDots {
+        display: none;
+    }
+
+    .navbarNav >li :after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        top: 1.2em;
+        background-color: white;
+        transform-origin: bottom right;
+        transition: transform 0.35s ease-out;
+      }
+      
+    .navbarNav >li :hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    }
+}
+
+/* Media queries set up nav menu END */
