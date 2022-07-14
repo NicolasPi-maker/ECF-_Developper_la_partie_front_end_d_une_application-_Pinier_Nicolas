@@ -1,0 +1,5 @@
+.mainContent {
+    min-height: calc(100vh - 30vh);
+    margin: 0;
+    padding: 0;
+}

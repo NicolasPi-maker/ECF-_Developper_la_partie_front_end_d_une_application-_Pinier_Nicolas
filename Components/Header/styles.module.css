@@ -1,0 +1,117 @@
+/* CSS Header Wrapper START */
+
+
+.wrapper {
+    background-color: #45555e;
+    color: white;
+    height: 30vh;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* CSS Header Wrapper END */
+
+/* CSS for navbar on mobile START */
+
+
+.navDots:after {
+    content: '\2807';
+    font-size: 3em;
+    color: white;
+}
+
+.navDots {
+    display: inline-block;
+    margin: 1em;
+    transform: rotate(90deg);
+}
+
+
+/* CSS for navbar on mobile END */
+
+
+/* CSS for navbar on desktop START */
+
+.navbarNav {
+    display: flex;
+    color: white;
+    justify-content: flex-end;
+    padding: 0px;
+    margin: 1.75em 0;
+    font-size: 1.5em;
+}
+
+.navbarNav > li {
+    display: inline-block;
+    position: relative;
+    margin-right: 3em;
+}
+
+.navMenu {
+    display: inline-block;
+    justify-content: center;
+}
+
+
+/* CSS for navbar on desktop END */
+
+
+/* CSS header Logo START */
+
+.logo {
+    display: flex;
+    margin: 1.5em;
+    max-width: 70px;
+    max-height: 70px;
+}
+
+/* CSS header Logo END */
+
+
+/* Media queries set up nav menu START */
+
+@media screen and (max-width: 430px) {
+    .navbarNav {
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        
+    }
+    
+    .navbarNav > li {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        margin: 0.5em 0;
+        
+    }
+}
+
+@media screen and (min-width: 430px) {
+    .navDots {
+        display: none;
+    }
+
+    .navbarNav >li :after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        top: 1.2em;
+        background-color: white;
+        transform-origin: bottom right;
+        transition: transform 0.35s ease-out;
+      }
+      
+    .navbarNav >li :hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    }
+}
+
+/* Media queries set up nav menu END */
