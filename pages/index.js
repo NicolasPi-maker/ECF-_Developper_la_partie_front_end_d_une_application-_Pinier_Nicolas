@@ -1,6 +1,9 @@
 import Head from 'next/head';
+import HomeFooter from '../Components/HomePageLayout/HomeFooter';
 import HomeHeader from '../Components/HomePageLayout/HomeHeader';
-import Layout from '../Components/UI/Layout';
+import PresentationPhoto from '../img/charles_cantin_photo.jpg';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
 
 const Home = () => {
   return (
@@ -11,6 +14,15 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <HomeHeader/>
+        <main className={styles.main}>
+          <Image
+            src={PresentationPhoto}
+            alt= 'photographie de Charles Cantin le photographe'
+            layout='fill'
+            objectFit='cover'
+          />
+        </main>
+      <HomeFooter/>
     </div>
   )
 };
