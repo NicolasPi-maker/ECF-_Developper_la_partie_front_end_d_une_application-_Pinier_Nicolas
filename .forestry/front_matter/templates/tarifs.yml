@@ -1,4 +1,29 @@
 ---
 label: Tarifs
 hide_body: false
-fields: []
+fields:
+- name: label
+  type: text
+  config:
+    required: false
+  label: Label
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: Quels prestations proposez-vous ?
+- name: prix
+  type: number
+  label: Prix
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+  description: Tarifs en euro de préférence
