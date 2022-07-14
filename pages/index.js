@@ -21,6 +21,24 @@ const Home = () => {
             layout='fill'
             objectFit='cover'
           />
+          <div className={`${styles.content} ${styles.descriptionTitle}`}>
+            <h2>Une photo vaut mieux que mille mots</h2>
+          </div>
+          <div className={`${styles.content} ${styles.description}`}>
+            <p>
+            dolor, vel venenatis lacus. Mauris venenatis enim ac eros sollicitudin interdum. Vestibulum sagittis ligula et fringilla pulvinar. Phasellus suscipit velit neque, at vulputate ligula vulputate et. Suspendisse nec diam varius, pharetra nisi et, commodo libero. Mauris fringilla dolor leo, sed suscipit ligula facilisis pulvinar.
+            </p>
+          </div>
+          <div className={`${styles.content} ${styles.description} ${styles.descriptionOptionalOne}`}>
+            <p>
+            dolor, vel venenatis lacus. Mauris venenatis enim ac eros sollicitudin interdum. Vestibulum sagittis ligula et fringilla pulvinar. Phasellus suscipit velit neque, at vulputate ligula vulputate et. Suspendisse nec diam varius, pharetra nisi et, commodo libero. Mauris fringilla dolor leo, sed suscipit ligula facilisis pulvinar.
+            </p>
+          </div>
+          <div className={`${styles.content} ${styles.description} ${styles.descriptionOptionalTwo}`}>
+            <p>
+            dolor, vel venenatis lacus. Mauris venenatis enim ac eros sollicitudin interdum. Vestibulum sagittis ligula et fringilla pulvinar. Phasellus suscipit velit neque, at vulputate ligula vulputate et. Suspendisse nec diam varius, pharetra nisi et, commodo libero. Mauris fringilla dolor leo, sed suscipit ligula facilisis pulvinar.
+            </p>
+          </div>
         </main>
       <HomeFooter/>
     </div>

@@ -9,3 +9,38 @@
   margin: 0;
   padding: 0;
 }
+
+.content {
+  position: absolute;
+  margin-left: 2em;
+  max-width: 450px;
+  text-align: justify;
+}
+
+.description {
+  top: 70%;
+}
+
+.descriptionOptionalOne {
+  top: 50%;
+}
+
+.descriptionOptionalTwo {
+  top: 30%;
+}
+
+@media screen and (max-width: 430px) {
+  .descriptionOptionalOne, .descriptionOptionalTwo {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 430px) {
+  .content {
+    left: 15%;
+  }
+
+  .descriptionTitle {
+    top: 10%;
+  }
+}
