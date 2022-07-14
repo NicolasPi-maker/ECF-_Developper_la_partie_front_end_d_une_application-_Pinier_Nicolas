@@ -28,3 +28,5 @@ fields:
   config:
     maxSize: 64
   label: Photo
+pages:
+- Posts/my-first-photo.md
