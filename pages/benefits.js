@@ -1,6 +1,7 @@
 import React from 'react';
 import fs from 'fs';
 import matter from 'gray-matter';
+import BenefitsRates from '../Components/BenefitsRates';
 
 const Benefits = ( {rates} ) => {
   console.log(rates);
@@ -8,17 +9,20 @@ const Benefits = ( {rates} ) => {
   return (
     <div>
       <h1>Tarifs et Prestations</h1>
-      {
-        rates.map((rate, i) => {
-          return (
-            <div key={i}>
-              <h5>{rate.label}</h5>
-              <h5>{rate.description}</h5>
-              <h5>{rate.prix}€</h5>
-            </div>
-          )
-        })
-      }
+      <section>
+        {
+          rates.map((rate, i) => {
+            return (
+              <BenefitsRates 
+                key={i}
+                label={rate.label}
+                description={rate.description}
+                price={rate.prix} 
+              />
+            )
+          })
+        }
+      </section>
     </div>
   )
 }
