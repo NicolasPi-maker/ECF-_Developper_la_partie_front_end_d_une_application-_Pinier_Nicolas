@@ -28,5 +28,6 @@ fields:
     step: 
   description: Tarifs en euro de préférence
 pages:
+- Tarifs/famille.md
 - Tarifs/juste-moi.md
 - Tarifs/pour-deux.md
