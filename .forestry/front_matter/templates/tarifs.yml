@@ -29,3 +29,4 @@ fields:
   description: Tarifs en euro de préférence
 pages:
 - Tarifs/juste-moi.md
+- Tarifs/pour-deux.md
