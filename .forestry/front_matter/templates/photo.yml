@@ -29,4 +29,10 @@ fields:
     maxSize: 64
   label: Photo
 pages:
+- Posts/bapteme.md
+- Posts/bebe.md
+- Posts/couple.md
+- Posts/famille.md
+- Posts/grossesse.md
+- Posts/mariage.md
 - Posts/my-first-photo.md
