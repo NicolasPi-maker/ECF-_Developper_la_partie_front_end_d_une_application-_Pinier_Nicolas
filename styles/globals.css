@@ -21,14 +21,15 @@ h1, h2, h3, p {
 }
 
 h1 {
-    margin: 0;
+    margin: 0 2em;
     padding: 0;
     display: flex;
     justify-content: center;
-    font-size: 3.5em;
+    font-size: 3.25em;
     color: white;
     position: relative;
-    bottom: 2.5em;
+    bottom: 2.75em;
+    text-align: center;
 }
 
 h3 {

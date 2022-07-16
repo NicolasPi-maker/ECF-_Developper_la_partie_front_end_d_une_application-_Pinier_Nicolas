@@ -2,18 +2,18 @@ import React from 'react';
 import fs from 'fs';
 import matter from 'gray-matter';
 import BenefitsRates from '../Components/BenefitsRates';
+import styles from '../styles/Benefits.module.css';
 
 const Benefits = ( {rates} ) => {
-  console.log(rates);
 
   return (
     <div>
-      <h1>Tarifs et Prestations</h1>
-      <section>
+      <h1 className={styles.title}>Tarifs et Prestations</h1>
+      <section className={styles.contentWrapper}>
         {
           rates.map((rate, i) => {
             return (
-              <BenefitsRates 
+              <BenefitsRates
                 key={i}
                 label={rate.label}
                 description={rate.description}

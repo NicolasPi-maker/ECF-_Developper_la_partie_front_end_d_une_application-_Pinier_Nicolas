@@ -1,9 +1,9 @@
-.wrapper {
-    margin: 3em;
+.contentWrapper {
+    display: flex;
+    justify-content: center;
 }
 
-
-.contentWrapper {
+.selectorContainer {
     display: flex;
     justify-content: center;
 }

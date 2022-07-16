@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import styles from './card.module.css';
+import styles from '../styles/card.module.css';
 
 const GalerieCard = ( { title, description, categories, picture } ) => {
   return (

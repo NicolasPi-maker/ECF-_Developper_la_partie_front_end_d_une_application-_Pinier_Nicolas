@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './tags.module.css';
+import styles from '../styles/tags.module.css';
 
 const TagsSelector = ( {handleChange} ) => {
   return (
@@ -9,7 +9,7 @@ const TagsSelector = ( {handleChange} ) => {
           <option value=''>
             Tout voir
           </option>
-          <option value='mariage'>Voyage</option>
+          <option value='mariage'>Mariage</option>
           <option value='grossesse'>Grossesse</option>
           <option value='bebe'>Bébé</option>
           <option value='famille'>Famille</option>

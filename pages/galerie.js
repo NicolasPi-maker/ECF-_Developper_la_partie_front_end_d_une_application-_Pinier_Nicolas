@@ -17,7 +17,9 @@ const Galerie = ( {photos} ) => {
     <div>
       <h1>Galerie</h1>
       <div>
-        <TagsSelector handleChange={handleChange}/>
+        <div className={styles.selectorContainer}>
+          <TagsSelector handleChange={handleChange}/>
+        </div>
         <section className={styles.contentWrapper}>
           {
             photos.map((photo, i) => {

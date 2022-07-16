@@ -1,9 +1,8 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    margin: 2em;
+    margin: 1em 2em;
     max-width: 400px;
-    transform: translateY(-60%);
 }
 
 .label {
@@ -13,7 +12,7 @@
 
 .select {
     font-size: 1.5em;
-    padding: 0.3em ;
+    padding: 0.2em ;
     border-bottom-left-radius: 50px;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;

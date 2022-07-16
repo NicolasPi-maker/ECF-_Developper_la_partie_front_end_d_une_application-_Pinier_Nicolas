@@ -1,0 +1,33 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin:auto;
+    background:linear-gradient(black,black) bottom /* left or right or else */ no-repeat;
+    background-size:30% 1px;
+    padding: 1em;
+}
+
+.label {
+    color: #45555e;
+}
+
+.description {
+    font-size: 1.2em;
+    color: black;
+    text-align: justify;
+}
+
+.price {
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+@media screen and (min-width: 430px) {
+    .wrapper {
+        width: 1150px;
+    }
+}

@@ -1,0 +1,54 @@
+.wrapper, .wrapper > div {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.input, .subButton {
+    padding: 1em;
+    margin-bottom: 3em;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.label {
+    margin-bottom: 0.75em;
+    color: #45555e;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.subButton {
+    border: none;
+    background-color: #45555e;
+    color: white;
+    font-weight: bold;
+    padding: 1em 3em;
+}
+
+.subButton:hover {
+    transition: linear 0.2s;
+    opacity: 80%;
+}
+
+.subButton:active {
+    transition: linear 0.2s;
+    opacity: 100%;
+}
+
+@media screen and (min-width: 430px) {
+    .input {
+        width: 575px;
+    }
+
+    .message, .buttonContainer {
+        width: 1150px;
+    }
+}
