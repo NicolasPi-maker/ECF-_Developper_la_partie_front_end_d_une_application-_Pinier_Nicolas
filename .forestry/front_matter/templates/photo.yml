@@ -29,5 +29,6 @@ fields:
     maxSize: 64
   label: Photo
 pages:
+- Posts/bapteme.md
 - Posts/couple.md
 - Posts/my-first-photo.md
