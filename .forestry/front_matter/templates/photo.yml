@@ -30,6 +30,7 @@ fields:
   label: Photo
 pages:
 - Posts/bapteme.md
+- Posts/bebe.md
 - Posts/couple.md
 - Posts/famille.md
 - Posts/my-first-photo.md
