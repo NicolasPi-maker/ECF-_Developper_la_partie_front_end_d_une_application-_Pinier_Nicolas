@@ -1,6 +1,5 @@
 /* CSS Header Wrapper START */
 
-
 .wrapper {
     background-color: #45555e;
     color: white;
@@ -110,6 +109,11 @@
 }
 
 @media  screen and (max-width: 430px) {
+    .static > li {
+        display: none;
+
+    }
+
     .navbar {
         height: 0px;
     }
