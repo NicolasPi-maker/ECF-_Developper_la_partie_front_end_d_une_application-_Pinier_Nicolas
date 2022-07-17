@@ -1,25 +1,25 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './styles.module.css';
 import Link from 'next/link'
 
 const NavBar = () => {
-  const [isShow, setIsShow] = useState(false);
+  const [isNavExpanded, setIsNavExpanded] = useState(false)
+
+  const handleClick = () => {
+    setIsNavExpanded(!isNavExpanded)
+  }
 
   return (
-    <nav className={styles.navMenu}>
-      <div className={styles.navDots} onClick={() => (setIsShow(!isShow))}></div>
-      <div>
-      {isShow &&
-        <div className={styles.navbar}>
-          <ul className={styles.navbarNav}>
-              <li><Link href='/'><a>Accueil</a></Link></li>
-              <li><Link href='/galerie'><a>Galerie</a></Link></li>
-              <li><Link href='/benefits'><a>Tarifs & Prestations</a></Link></li>
-              <li><Link href='/contact'><a>Contact</a></Link></li>
-          </ul>
-        </div>
-      }
+    <nav className={styles.navbar}>
+      <div className={styles.dotsWrapper}>
+        <div className={styles.navDots} onClick={handleClick}></div>
       </div>
+        <ul className={isNavExpanded ? `${styles.navbarNav} ${styles.static}` :  `${styles.navbarNav} ${styles.responsive}`}>
+            <li onClick={handleClick}><Link href='/'><a>Accueil</a></Link></li>
+            <li onClick={handleClick}><Link href='/galerie'><a>Galerie</a></Link></li>
+            <li onClick={handleClick}><Link href='/benefits'><a>Tarifs & Prestations</a></Link></li>
+            <li onClick={handleClick}><Link href='/contact'><a>Contact</a></Link></li>
+        </ul>
     </nav>
   )
 }

@@ -43,11 +43,12 @@
     padding: 0;
 }
 
+
 .informations > * {
     margin: 0.75em;
 }
 
-.informations >a:hover {
+.informations > a:hover, .contact > a:hover {
     font-weight: bold;
 }
 

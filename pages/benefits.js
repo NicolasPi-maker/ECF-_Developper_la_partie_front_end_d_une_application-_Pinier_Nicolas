@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import React from 'react';
 import fs from 'fs';
 import matter from 'gray-matter';
@@ -8,6 +9,14 @@ const Benefits = ( {rates} ) => {
 
   return (
     <div>
+      <Head>
+        <title>Tarifs et Prestations</title>
+        <meta 
+          name="description" 
+          content="Mes prestations vont de séance photo en solo et duo jusqu'au bapteme, grossesse et mariage sur devis Je propose plusieurs service sur demande et devis donc n'hésitez pas à me contacter"
+        />
+        <link rel="icon" href="/favicon-96x96.png" />
+      </Head>
       <h1 className={styles.title}>Tarifs et Prestations</h1>
       <section className={styles.contentWrapper}>
         {

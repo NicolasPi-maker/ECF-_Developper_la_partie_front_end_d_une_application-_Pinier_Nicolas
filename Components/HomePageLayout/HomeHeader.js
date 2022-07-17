@@ -6,13 +6,14 @@ import Image from 'next/image'
 
 const HomeHeader = () => {
   return (
-    <header className={styles.wrapper}>
-        <div>
+    <header className={styles.header}>
+        <NavBar/>
+        <div className={styles.backgroundBrand}>
           <Image 
             src={LogoName}
             alt='charles cantin photographe logo and name'
-            width={1200}
-            height={1200}
+            width={950}
+            height={950}
           />
         </div>
     </header>

@@ -14,6 +14,10 @@
 
 /* CSS for navbar on mobile START */
 
+.dotsWrapper {
+    display: flex;
+    justify-content: flex-end;
+}
 
 .navDots:after {
     content: '\2807';
@@ -23,8 +27,10 @@
 
 .navDots {
     display: inline-block;
-    margin: 1em;
+    margin: 1.5em;
+    font-size: 1.25em;
     transform: rotate(90deg);
+    transition: ease-in 2s;
 }
 
 
@@ -33,13 +39,18 @@
 
 /* CSS for navbar on desktop START */
 
+.navbar {
+    background-color: #45555e;
+}
+
 .navbarNav {
     display: flex;
     color: white;
     justify-content: flex-end;
+    align-items: center;
     padding: 0px;
-    margin: 1.75em 0;
     font-size: 1.5em;
+    margin: 2em 0;
 }
 
 .navbarNav > li {
@@ -47,12 +58,6 @@
     position: relative;
     margin-right: 3em;
 }
-
-.navMenu {
-    display: inline-block;
-    justify-content: center;
-}
-
 
 /* CSS for navbar on desktop END */
 
@@ -68,26 +73,16 @@
 
 /* CSS header Logo END */
 
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+  }
 
 /* Media queries set up nav menu START */
-
-@media screen and (max-width: 430px) {
-    .navbarNav {
-        display: inline-block;
-        flex-direction: column;
-        justify-content: center;
-        margin: auto;
-        
-    }
-    
-    .navbarNav > li {
-        margin: auto;
-        display: flex;
-        align-items: center;
-        margin: 0.5em 0;
-        
-    }
-}
 
 @media screen and (min-width: 430px) {
     .navDots {
@@ -111,6 +106,35 @@
     .navbarNav >li :hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+    }
+}
+
+@media  screen and (max-width: 430px) {
+    .navbar {
+        height: 0px;
+    }
+
+    .responsive {
+        animation: fadein 1s;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        height: 25vh;
+        background-color: #45555e;
+        z-index: 999;
+    }
+
+    .responsive li {
+        text-align: center;
+        margin: 0.5em;
+    }
+
+    .responsive li a {
+        color: white;
+        width: 100%;
+        padding: 1.5rem 0;
     }
 }
 

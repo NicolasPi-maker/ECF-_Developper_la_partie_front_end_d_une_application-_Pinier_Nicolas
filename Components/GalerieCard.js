@@ -3,15 +3,18 @@ import Image from 'next/image';
 import styles from '../styles/card.module.css';
 
 const GalerieCard = ( { title, description, categories, picture } ) => {
+
   return (
     <article>
-        <div className={styles.picture}>
+        <div className={styles.pictureWrapper}>
             <Image className={styles.picture}
                 src={picture}
                 alt={title}
-                height={500}
-                width={500}
+                height={450}
+                width={450}
             />
+            <h4 className={styles.picturetitle}>{title}</h4>
+            <p className={styles.description}>{description}</p>
         </div>
     </article>
   )
