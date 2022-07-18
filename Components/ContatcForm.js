@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../styles/form.module.css'
 
 const ContatcForm = () => {
+
   return (
     <div>
         <form name='contact' action="contact/?success=true" method='POST' data-netlify="true">
