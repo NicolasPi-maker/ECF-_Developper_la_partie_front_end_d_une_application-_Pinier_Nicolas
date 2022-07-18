@@ -4,7 +4,8 @@ import styles from '../styles/form.module.css'
 const ContatcForm = () => {
   return (
     <div>
-        <form name='contact' action="/success" method='POST' data-netlify="true">
+        <form name='contact' action="contact/?success=true" method='POST' data-netlify="true">
+          <input type="hidden" name="contact-form" value="contact-form" />
           <div className={styles.wrapper}>
             <div>
                 <label htmlFor='lastName' className={styles.label}>Nom</label>
