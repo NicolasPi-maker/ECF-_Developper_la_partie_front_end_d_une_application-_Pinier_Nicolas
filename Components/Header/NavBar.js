@@ -8,7 +8,6 @@ const NavBar = () => {
   const handleClick = () => {
     // Onclick open or close navbar menu on mobile
     setIsNavExpanded(!isNavExpanded)
-    console.log(isNavExpanded);
   }
 
   return (
