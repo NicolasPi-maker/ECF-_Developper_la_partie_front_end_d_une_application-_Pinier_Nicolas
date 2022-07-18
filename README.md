@@ -37,16 +37,17 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 Open [Netlify](https://www.netlify.com/?utm_medium=paid_search&utm_source=google&utm_campaign=12755510784&utm_term=netlify) with your browser to log in or sign up.
 
-Click on Team overview link and Add new site :
+Click on `Team overview` link and Add new site :
 
 - Import an existing project
 - Connect to git Provider with Github
 - Authorize your netlify account to access at your GitHub project repository
-- Click on "Deploy Site" button
+- Click on `Deploy Site` button
 
 ## Learn More
 
-[Basic build settings doc](https://docs.netlify.com/configure-builds/overview/?_gl=1%2apklqgt%2a_gcl_aw%2aR0NMLjE2NTgxNDkxOTkuQ2owS0NRandpZFNXQmhEZEFSSXNBSW9UVmIwb1hLSFkwZlJ1NzVQLWQybHBZMnRyX0JiZ05OeGRvUXFITWJidWxFcnhJMmlxbGlJWFBnNGFBdlZ5RUFMd193Y0I.&_ga=2.181527278.890479890.1658149063-295289434.1656863534&_gac=1.192879960.1658149205.Cj0KCQjwidSWBhDdARIsAIoTVb0oXKHY0fRu75P-d2lpY2tr_BbgNNxdoQqHMbbulErxI2iqliIXPg4aAvVyEALw_wcB#build-settings) - Learn About
+- [Netlify Doc](https://docs.netlify.com/) - learn about netlify fetures
+- [Basic build settings doc](https://docs.netlify.com/configure-builds/overview/?_gl=1%2apklqgt%2a_gcl_aw%2aR0NMLjE2NTgxNDkxOTkuQ2owS0NRandpZFNXQmhEZEFSSXNBSW9UVmIwb1hLSFkwZlJ1NzVQLWQybHBZMnRyX0JiZ05OeGRvUXFITWJidWxFcnhJMmlxbGlJWFBnNGFBdlZ5RUFMd193Y0I.&_ga=2.181527278.890479890.1658149063-295289434.1656863534&_gac=1.192879960.1658149205.Cj0KCQjwidSWBhDdARIsAIoTVb0oXKHY0fRu75P-d2lpY2tr_BbgNNxdoQqHMbbulErxI2iqliIXPg4aAvVyEALw_wcB#build-settings) - see more about
 
 
 
