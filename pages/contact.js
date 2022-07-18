@@ -18,7 +18,7 @@ const Contact = () => {
       </Head>
         <h1>Contact</h1>
         <section className={styles.contentWrapper}>
-          {formVisible ? <ContatcForm/> : ConfirmationMessage}
+          <ContatcForm/>
         </section>
     </div>
   )
