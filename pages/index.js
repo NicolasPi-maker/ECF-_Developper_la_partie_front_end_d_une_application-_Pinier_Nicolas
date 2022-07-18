@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import HomeFooter from '../Components/HomePageLayout/HomeFooter';
+import Footer from '../Components/Footer/index';
 import HomeHeader from '../Components/HomePageLayout/HomeHeader';
 import PresentationPhoto from '../img/charles_cantin_photo.jpg';
 import Image from 'next/image';
@@ -10,13 +10,15 @@ const Home = () => {
     <div>
       <Head>
         <title>Accueil</title>
-        <meta 
+        <meta
+          lang='fr'
           name="description" 
           content="Je suis Charles Cantin, photograpgre et bienvenue sur mon portfolio, je réalise plusieurs type de préstation, mariage, bapteme, séance photo solo et duo, n'hésitez pas à me contacter !"
         />
         <link rel="icon" href="/favicon-96x96.png" />
       </Head>
       <HomeHeader/>
+
         <main className={styles.main}>
           <Image
             src={PresentationPhoto}
@@ -43,7 +45,8 @@ const Home = () => {
             </p>
           </div>
         </main>
-      <HomeFooter/>
+        
+      <Footer/>
     </div>
   )
 };

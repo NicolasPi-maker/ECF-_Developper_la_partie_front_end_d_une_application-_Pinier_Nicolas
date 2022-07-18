@@ -1,8 +1,14 @@
+/* CSS form wrapper Start */
+
 .wrapper, .wrapper > div {
     display: flex;
     flex-direction: column;
     width: 350px;
 }
+
+/* CSS form wrapper End */
+
+/* CSS form content Start */
 
 .input, .subButton {
     padding: 1em;
@@ -13,10 +19,13 @@
     border-top-right-radius: 15px;
 }
 
+.label, .subButton {
+    font-weight: bold;
+}
+
 .label {
     margin-bottom: 0.75em;
     color: #45555e;
-    font-weight: bold;
     font-size: 1.1em;
 }
 
@@ -25,11 +34,18 @@
     justify-content: flex-end;
 }
 
+.message {
+    font-family: 'Arsenal', sans-serif;
+}
+
+/* CSS form content End */
+
+/* CSS submit button Start */
+
 .subButton {
     border: none;
     background-color: #45555e;
     color: white;
-    font-weight: bold;
     padding: 1em 3em;
     transition: linear 0.5s;
 }
@@ -43,9 +59,9 @@
     opacity: 100%;
 }
 
-.message {
-    font-family: 'Arsenal', sans-serif;
-}
+/* CSS submit button End */
+
+/* CSS ipad breakpoint Start */
 
 @media screen and (min-width: 820px) {
     .input {
@@ -57,6 +73,10 @@
     }
 }
 
+/* CSS ipad breakpoint End */
+
+/* CSS desktop breakpoint Start */
+
 @media screen and (min-width: 1200px) {
     .input {
         width: 575px;
@@ -66,3 +86,5 @@
         width: 1150px;
     }
 }
+
+/* CSS desktop breakpoint End */

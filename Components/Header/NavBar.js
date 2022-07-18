@@ -6,7 +6,9 @@ const NavBar = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false)
 
   const handleClick = () => {
+    // Onclick open or close navbar menu on mobile
     setIsNavExpanded(!isNavExpanded)
+    console.log(isNavExpanded);
   }
 
   return (

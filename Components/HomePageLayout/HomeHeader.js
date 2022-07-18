@@ -2,7 +2,7 @@ import React from 'react';
 import NavBar from '../Header/NavBar';
 import styles from './styles.module.css';
 import LogoName from '../../img/brand_background.png';
-import Image from 'next/image'
+import Image from 'next/image';
 
 const HomeHeader = () => {
   return (
@@ -14,6 +14,7 @@ const HomeHeader = () => {
             alt='charles cantin photographe logo and name'
             width={950}
             height={950}
+            priority
           />
         </div>
     </header>

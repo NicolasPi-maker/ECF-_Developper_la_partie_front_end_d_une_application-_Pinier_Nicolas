@@ -17,12 +17,14 @@ const Galerie = ( {photos} ) => {
     <div>
       <Head>
         <title>Galerie Photo</title>
-        <meta 
+        <meta
+          lang='fr'
           name="description" 
           content="Galerie photo de Charles Cantin sur plusieurs thêmes, couple , baptême, famille, bebe, grossesse, mariage. Je propose plusieurs service sur demande et devis donc n'hésitez pas à me contacter"
         />
         <link rel="icon" href="/favicon-96x96.png" />
       </Head>
+
       <h1>Galerie</h1>
       <div>
         <div className={styles.selectorContainer}>
@@ -31,8 +33,11 @@ const Galerie = ( {photos} ) => {
         <section className={styles.contentWrapper}>
           {
             photos.map((photo, i) => {
+              // Check object existence
               if(photo.photo) {
+
                 if(selectedCategory !== '') {
+                  // render only components match with selected category
                   if(photo.categories.find(categorie => categorie === selectedCategory)) {
                     return (
                       <GalerieCard
@@ -45,6 +50,7 @@ const Galerie = ( {photos} ) => {
                     )
                   }
                 } else {
+                  // render all components if default category ('Tout voir') is selected
                   return (
                     <GalerieCard
                       key={i}
@@ -65,7 +71,7 @@ const Galerie = ( {photos} ) => {
 }
 
 export const getStaticProps = async () => {
-  // List of files in blgos folder
+  // List of files in Posts folder
   const filesInPhotos = fs.readdirSync('./Posts')
 
   // Get the front matter and slug (the filename without .md) of all files
@@ -81,6 +87,7 @@ export const getStaticProps = async () => {
 
   return {
     props: {
+      // Add photos object in props component
       photos : JSON.parse(JSON.stringify(photos)) 
     }
   }

@@ -1,3 +1,4 @@
+/* CSS create fade in animation Start */
 
 @keyframes fadein {
     from {
@@ -6,7 +7,11 @@
     to {
         opacity:1;
     }
-  }
+}
+
+/* CSS create fade in animation End */
+
+/* CSS picture wrapper component Start */
 
 .pictureWrapper {
     animation: fadein 1.5s;
@@ -15,6 +20,10 @@
     margin: 1em 1em;
     padding: 0;
 }
+
+/* CSS picture wrapper component End */
+
+/* CSS photo picture Start */
 
 .picture {
     border-radius: 5%;
@@ -26,6 +35,10 @@
     opacity: 15%;
 }
 
+/* CSS photo picture End */
+
+/* CSS photo data Start */
+
 .picturetitle, .description {
     position: absolute;
     color: #45555e;
@@ -36,10 +49,11 @@
 }
 
 .description {
-    position: absolute;
     color: black;
     top: 4em;
     left: 1em;
     z-index: 99;
     text-align: justify;
 }
+
+/* CSS photo data End */

@@ -1,3 +1,5 @@
+/* CSS footer wrapper Start */
+
 .wrapper {
     padding: 0;
     margin: 0;
@@ -5,7 +7,11 @@
     border-top: solid 3px white;
 }
 
-.main {
+/* CSS footer wrapper End */
+
+/* CSS display container Start */
+
+.main, .socialNetworks, .contact, .informations, .logoWrapper, .copyright {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,19 +24,15 @@
     cursor: pointer;
 }
 
+/* CSS display container End */
+
+/* CSS content Start */
+
 .socialNetworks, .contact, .informations {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: 1.5em 0;
 }
 
 .logoWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
 }
 
@@ -40,8 +42,11 @@
 
 .contact > * {
     margin: 0.2em;
-    padding: 0;
 }
+
+.contact, .copyright {
+    padding: 0;
+} 
 
 
 .informations > * {
@@ -52,13 +57,9 @@
     font-weight: bold;
 }
 
-.copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    color: white;
-}
+/* CSS content End */
+
+/* CSS desktop breakpoint Start */
 
 @media screen and (min-width: 430px) {
     .main {
@@ -67,5 +68,7 @@
         align-items: stretch;
     }
 }
+
+/* CSS desktop breakpoint End */
 
 

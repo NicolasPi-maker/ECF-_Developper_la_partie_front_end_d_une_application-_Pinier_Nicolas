@@ -8,7 +8,8 @@ const Contact = () => {
     <div>
       <Head>
         <title>Contact</title>
-        <meta 
+        <meta
+          lang='fr'
           name="description" 
           content="Pour toute demande de prestations qui ne figurent pas dans celles indiquées et pour échanger concernant le devis pour votre mariage envoyez moi un mail via le formulaire ou contactez moi par téléphone"
         />

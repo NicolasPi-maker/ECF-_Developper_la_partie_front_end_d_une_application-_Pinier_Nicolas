@@ -12,6 +12,7 @@ const Benefits = ( {rates} ) => {
       <Head>
         <title>Tarifs et Prestations</title>
         <meta 
+          lang='fr'
           name="description" 
           content="Mes prestations vont de séance photo en solo et duo jusqu'au bapteme, grossesse et mariage sur devis Je propose plusieurs service sur demande et devis donc n'hésitez pas à me contacter"
         />
@@ -37,7 +38,7 @@ const Benefits = ( {rates} ) => {
 }
 
 export const getStaticProps = async () => {
-  // List of files in blgos folder
+  // List of files in Tarifs folder
   const filesInPhotos = fs.readdirSync('./Tarifs')
 
   // Get the front matter and slug (the filename without .md) of all files
@@ -54,6 +55,7 @@ export const getStaticProps = async () => {
 
   return {
     props: {
+      // Add rates object in props component
       rates : JSON.parse(JSON.stringify(rates)) 
     }
   }

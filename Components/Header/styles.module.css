@@ -1,12 +1,14 @@
 /* CSS Header Wrapper START */
 
 .wrapper {
-    background-color: #45555e;
-    color: white;
     height: 30vh;
     padding: 0;
     display: flex;
     justify-content: space-between;
+}
+
+.wrapper, .navbar {
+    background-color: #45555e;
 }
 
 /* CSS Header Wrapper END */
@@ -37,10 +39,6 @@
 
 
 /* CSS for navbar on desktop START */
-
-.navbar {
-    background-color: #45555e;
-}
 
 .navbarNav {
     display: flex;
@@ -81,7 +79,7 @@
     }
   }
 
-/* Media queries set up nav menu START */
+/* CSS desktop breakpoint Start */
 
 @media screen and (min-width: 430px) {
     .navDots {
@@ -107,6 +105,10 @@
     transform-origin: bottom left;
     }
 }
+
+/* CSS desktop breakpoint End */
+
+/* CSS mobile breakpoint Start */
 
 @media  screen and (max-width: 430px) {
     .static > li {
@@ -142,4 +144,4 @@
     }
 }
 
-/* Media queries set up nav menu END */
+/* CSS mobile breakpoint End */

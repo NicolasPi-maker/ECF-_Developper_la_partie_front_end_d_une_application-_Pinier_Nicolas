@@ -1,3 +1,5 @@
+/* CSS main wrapper Start  */
+
 .contentWrapper {
     display: flex;
     flex-direction: column;
@@ -5,4 +7,6 @@
     margin: 2em;
     transform: translateY(-5%);
 }
+
+/* CSS main wrapper End  */
 

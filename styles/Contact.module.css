@@ -1,6 +1,10 @@
+/* CSS main wrapper Start  */
+
 .contentWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 2em;
 }
+
+/* CSS main wrapper End  */

@@ -1,9 +1,15 @@
+/* CSS tags input wrapper Start */
+
 .wrapper {
     display: flex;
     flex-direction: column;
     margin: 1em 2em;
     max-width: 400px;
 }
+
+/* CSS tags input wrapper End */
+
+/* CSS tags content Start */
 
 .label {
     margin-bottom: 1em;
@@ -20,3 +26,4 @@
     cursor: pointer;
 }
 
+/* CSS tags content End */

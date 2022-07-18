@@ -1,3 +1,5 @@
+/* CSS set minimum main default height */
+
 .mainContent {
     min-height: calc(100vh - 30vh);
     margin: 0;

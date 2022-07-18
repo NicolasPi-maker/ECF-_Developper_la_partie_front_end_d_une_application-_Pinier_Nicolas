@@ -1,3 +1,5 @@
+/* CSS main wrapper Start */
+
 .contentWrapper {
     display: flex;
     justify-content: center;
@@ -5,7 +7,13 @@
     flex-wrap: wrap;
 }
 
+/* CSS main wrapper End */
+
+/* CSS select input container Start */
+
 .selectorContainer {
     display: flex;
     justify-content: center;
 }
+
+/* CSS select input container End */

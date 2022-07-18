@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Montserrat&display=swap');
 
+/* CSS GLOBAL STYLES */
+
 html,
 body {
   padding: 0;
@@ -16,7 +18,7 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, a {
   color: white;
 }
 

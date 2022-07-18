@@ -1,7 +1,13 @@
+/* CSS main description photo wrapper Start */
+
 .photoWrapper {
   margin: 0;
   padding: 0;
 }
+
+/* CSS main description photo wrapper End */
+
+/* CSS main wrapper Start */
 
 .main {
   position: relative;
@@ -10,10 +16,14 @@
   padding: 0;
 }
 
+/* CSS main wrapper End */
+
+/* CSS main content Start */
+
 .content {
   position: absolute;
   margin-left: 2em;
-  max-width: 450px;
+  max-width: 350px;
   text-align: justify;
 }
 
@@ -29,22 +39,27 @@
   top: 30%;
 }
 
-@media screen and (max-width: 430px) {
-  .descriptionOptionalOne, .descriptionOptionalTwo {
-    display: none;
-  }
-
-  .content {
-    max-width: 350px;
-  }
+.descriptionOptionalOne, .descriptionOptionalTwo {
+  display: none;
 }
+
+/* CSS main content Start */
+
+/* CSS desktop breakpoint Start */
 
 @media screen and (min-width: 430px) {
   .content {
     left: 15%;
+    max-width: 450px;
   }
 
   .descriptionTitle {
     top: 10%;
   }
+
+  .descriptionOptionalOne, .descriptionOptionalTwo {
+    display: block;
+  }
 }
+
+/* CSS desktop breakpoint End */
