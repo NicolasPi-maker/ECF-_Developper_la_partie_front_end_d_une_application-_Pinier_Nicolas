@@ -124,7 +124,7 @@
     .responsive {
         animation: fadein 1s;
         position: absolute;
-        top: 60px;
+        top: 1em;
         left: 0;
         flex-direction: column;
         width: 100%;
