@@ -28,16 +28,9 @@
 }
 
 .description {
-  top: 60%;
+  top: 65%;
 }
 
-.descriptionOptionalOne {
-  top: 40%;
-}
-
-.descriptionOptionalTwo {
-  top: 20%;
-}
 
 .descriptionOptionalOne, .descriptionOptionalTwo {
   display: none;
@@ -47,19 +40,34 @@
 
 /* CSS desktop breakpoint Start */
 
+@media screen and (max-height: 630px) {
+  .description {
+    top: 55%;
+  }
+}
+
 @media screen and (min-width: 430px) {
   .content {
     left: 15%;
     max-width: 450px;
   }
-
+  
   .descriptionTitle {
     top: 10%;
+  }
+  
+  .descriptionOptionalOne {
+    top: 45%;
+  }
+  
+  .descriptionOptionalTwo {
+    top: 25%;
   }
 
   .descriptionOptionalOne, .descriptionOptionalTwo {
     display: block;
   }
 }
+
 
 /* CSS desktop breakpoint End */
