@@ -8,34 +8,25 @@
     }
   }
 
-/* CSS display header wrapper Start */
-
-.header, .backgroundBrand {
-    display: flex;
-}
-
-.header {
-    flex-direction: column;
-}
-
-/* CSS display header wrapper End */
-
 /* CSS background image Start */
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .backgroundBrand {
-    animation: fadein 2s;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    animation: fadein 2s;
+    align-items: center;
+    padding-bottom: 10%;
     background-color: #45555e;
     height: 100vh;
 };
 
+
 /* CSS background image End */
 
-@media  screen and (min-width: 115px) {
-    .backgroundBrand {
-        padding-bottom: 20%;
-        opacity: 0;
-    }
-}

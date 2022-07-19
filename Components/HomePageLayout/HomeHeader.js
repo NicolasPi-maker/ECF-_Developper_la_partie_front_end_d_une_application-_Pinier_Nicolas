@@ -6,18 +6,18 @@ import NavBar from '../Header/NavBar';
 
 const HomeHeader = () => {
   return (
-    <div className={styles.header}>
-      <NavBar/>
+      <div className={styles.wrapper}>
+          <NavBar/>
         <div className={styles.backgroundBrand}>
           <Image
             src={LogoName}
             alt='charles cantin photographe logo and name'
-            width={950}
-            height={950}
+            width={750}
+            height={750}
             priority
           />
         </div>
-    </div>
+      </div>
   )
 }
 
