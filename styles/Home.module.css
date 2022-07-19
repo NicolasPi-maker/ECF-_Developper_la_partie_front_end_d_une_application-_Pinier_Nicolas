@@ -22,21 +22,21 @@
 
 .content {
   position: absolute;
-  margin: 1.5em;
+  margin: 2em;
   max-width: 350px;
   text-align: justify;
 }
 
 .description {
-  top: 70%;
+  top: 60%;
 }
 
 .descriptionOptionalOne {
-  top: 50%;
+  top: 40%;
 }
 
 .descriptionOptionalTwo {
-  top: 30%;
+  top: 20%;
 }
 
 .descriptionOptionalOne, .descriptionOptionalTwo {
