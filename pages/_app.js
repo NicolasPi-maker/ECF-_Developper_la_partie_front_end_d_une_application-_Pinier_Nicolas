@@ -12,8 +12,8 @@ function MyApp({ Component, pageProps, ...appProps }) {
 
   return (
     <LayoutComponent>
-        <Component {...pageProps}/>
-    </LayoutComponent>
+          <Component {...pageProps}/>
+      </LayoutComponent>
     );
 }
 
