@@ -22,7 +22,7 @@
 
 .content {
   position: absolute;
-  margin-left: 2em;
+  margin: 1.5em;
   max-width: 350px;
   text-align: justify;
 }
