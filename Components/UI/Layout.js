@@ -4,6 +4,7 @@ import Footer from '../Footer';
 import styles from './styles.module.css';
 
 const Layout = ({children}) => {
+
   return (
     <>
         <Header/>

@@ -1,3 +1,12 @@
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+  }
+
 /* CSS Header Wrapper START */
 
 .wrapper {
@@ -28,8 +37,7 @@
 
 .navDots {
     display: inline-block;
-    margin: 1.5em;
-    margin-bottom: 3em;
+    margin: 1.35em;
     font-size: 1.25em;
     transform: rotate(90deg);
     transition: ease-in 2s;
@@ -47,7 +55,7 @@
     justify-content: flex-end;
     align-items: center;
     padding: 0px;
-    font-size: 1.5em;
+    font-size: 1.75em;
     margin: 2em 0;
 }
 
@@ -71,14 +79,6 @@
 
 /* CSS header Logo END */
 
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-  }
 
 /* CSS desktop breakpoint Start */
 
@@ -124,7 +124,7 @@
     .responsive {
         animation: fadein 1s;
         position: absolute;
-        top: 1em;
+        top: 1.5em;
         left: 0;
         flex-direction: column;
         width: 100%;
@@ -135,7 +135,7 @@
 
     .responsive li {
         text-align: center;
-        margin: 0.5em;
+        margin: 0.25em;
     }
 
     .responsive li a {

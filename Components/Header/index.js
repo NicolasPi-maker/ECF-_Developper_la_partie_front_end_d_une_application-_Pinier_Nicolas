@@ -1,4 +1,4 @@
-import React,{ useState } from 'react';
+import React from 'react';
 import styles from './styles.module.css';
 import Image from 'next/image';
 import Logo from '../../img/brand_logo.png';
@@ -21,7 +21,6 @@ const Header = () => {
             />
           </a>
         </Link>
-        
       </div>
         <NavBar/>
     </div>
